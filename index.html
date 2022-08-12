@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@302;400;605&display=swap');
+
+    :root {
+      ---soft-blue: hsl(215, 51%, 70%);
+      ---cyan: hsl(178, 100%, 50%);
+      ---cyan70: hsla(178, 100%, 50%,.5);
+      ---v-dark-blue-main: hsl(217, 54%, 11%);
+      ---v-dark-blue-card: hsl(216, 50%, 16%);
+      ---v-dark-blue-line: hsl(215, 32%, 27%);
+      ---white:hsl(0, 0%, 100%);
+      ---white70:hsla(0, 0%, 100%,.5);
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      background-color: var(---v-dark-blue-main);
+    }
+
+    h3 {
+      color: var(---white);
+    }
+
+    h3:hover,.authorSection span:hover {
+      color: var(---cyan);
+      cursor: pointer;
+    }
+
+    p,.timeLeft,.authorSection {
+      color: var(---white70);
+      font-weight: 302;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .card {
+      margin: 70px auto;
+      max-width: 300px;
+      padding: 15px;
+      background-color: var(---v-dark-blue-card);
+      border-radius: 10px;
+    }
+
+    .etherInfo {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .etherPrice,.timeLeft {
+      display: flex;
+      align-items: center;
+    }
+
+    .timeLeft {
+      color: var(---soft-blue);
+    }
+
+    .etherPrice {
+      color: var(---cyan);
+    }
+
+    .etherInfoText {
+      margin-left: 5px;
+    }
+
+    .authorSection {
+      border-top: var(---v-dark-blue-line) 2px solid;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    .authorSection img{
+      border: white 2px solid;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+    }
+    .authorNote {
+      margin-left: 10px;
+    }
+    .authorSection span {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="wrap">
+      <img src="images/image-equilibrium.jpg" alt="">
+    </div>
+    <h3>Equilibrium #3429</h3>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="etherInfo">
+      <div class="etherPrice">
+        <object data="images/icon-ethereum.svg" type=""></object>
+        <div class="etherInfoText">0.041 ETH</div>
+      </div>
+      <div class="timeLeft">
+        <object data="images/icon-clock.svg" type="image/svg+xml"></object>
+        <div class="etherInfoText">3 days left</div>
+      </div>
+    </div>
+    <div class="authorSection">
+      <img src="images/image-avatar.png" alt="">
+      <div class="authorNote">
+        Creation of <span>Jules Wyvern</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
